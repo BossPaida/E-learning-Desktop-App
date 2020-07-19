@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+	<title>Maths</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/home3.css" type="text/css"media="screen" />
+	<link rel="stylesheet" href="bootstrap\bootstrap.min.css">
+	
+	<script src="bootstrap\bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/maths.css" type="text/css"media="screen" />
+	 
+	
+	
+	<!-- Script starts here-->
+	<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+} 
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function filterFunction2() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown2");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+} 
+		  </script>
+</head>
+
+<body >
+		<div class="container-fluid">
+			<div id="topbar" class="row">
+				<div class="col-md-12">
+					
+				</div>
+			</div>
+			<div id="headerbar" class="row">
+				<div class="col-md-2">
+					<a href="index.html"><img id="logo" alt="insert logo" src="Logo.gif"/></a>
+				</div>
+				<div id="edu" class="col-md-10">
+					<h2 class="eduu" >Easy Education</h2>
+				</div>
+			</div>
+			<div id="lowbar" class="row">
+				<div id="cre" class="col-md-12">
+					<h1 align="center">Technology the way to go</h1>
+				</div>
+			</div>
+	    </div>
+		<div class="container-fluid">
+			<div id="grade1st" class="row">
+				<div class="col-md-12">
+					<a href="g1.html"><button id="btn"><strong>back</strong></button></a>
+					<h2 id="g" align="center">GRADE 1: MATHS<h2>
+				</div>
+			</div>
+			<div id="below" class="row">
+				<div class="col-md-12">
+					
+				</div>
+			</div>
+		</div>
+<!-- ..............................................................................................................................-->	
+<!-- DROP DOWN MENUS TOPICS/Assessment -->
+<div class="container-fluid">
+	<div id="below" class="row">
+		
+	</div>
+</div>
+		<div id="alldrop" align="center" class="topicdiv" height="auto">
+			<div class="child-drop" align="left" height="auto" >
+					 <div class="dropdown" >
+						<button onclick="myFunction()" class="dropbtn">Topics</button>
+							<div id="myDropdown" class="dropdown-content">
+								<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" />
+									<a target="_heopenit" href="material\maths\Infant_Maths_and_Science_Syllabus06Aug2015.pdf"><b><font size="3" color="green">SYLLABUS</font></b></a>
+									<a href=""><b><font size="5" color="blue">MATHEMATICAL PLAY</font></b></a>
+									<a target="_heopenit" href="material\maths\1.1_Maths_Story_Presentation_Starter_Ideas.ppsx"><b>Starter Ideas</b></a>
+									<a href="material\maths\1.1_Ordering_Numbers.swf"><b>Ordering Numbers</b></a>
+									<a target="_heopenit" href="material\maths\1.6_Counting_number_shapes_doubles.ppsx"><b>Counting Number Shapes</b></a>
+									<a target="_heopenit" href="material\maths\shapes_ebook.exe"><b>Shapes eBook</b></a>
+								
+							</div>
+					</div>
+				<!----------------------------------------Assessment------------------------------------------------------------------------------------------>
+					<div class="dropdown2">
+						<button onclick="myFunction2()" class="dropbtn2">Revision</button>
+							<div id="myDropdown2" class="dropdown-content2">
+								<input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()" />
+									<a href="material\maths\1.1_Counting_blockcounting.swf"><b>Counting: Block Count</b></a>
+									<a href="material\maths\1.1_Counting_buscountingECD.swf"><b>Counting: Bus Count</b></a>
+									<a href="material\maths\1.5_adding.swf"><b>Addition</b></a>
+									<a href="material\maths\1.5_addition.swf"><b>Addition Assessment</b></a>
+								
+							</div>
+					</div>
+			</div>
+		</div>
+</body>
+
+</html>
